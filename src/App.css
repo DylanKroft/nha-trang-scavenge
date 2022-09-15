@@ -60,7 +60,7 @@
 }
 
 .largest {
-  flex: 6 !important;
+  flex: 5 !important;
 }
 
 input[type="checkbox"] {
@@ -76,4 +76,16 @@ input[type="checkbox"] {
 
 .odd {
   background-color: #fdfaf1;
+}
+
+.fourth {
+  flex: 1 !important;
+}
+
+.third {
+  flex: 1 !important;
+}
+
+.two {
+  flex: 2 !important;
 }
