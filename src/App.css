@@ -107,3 +107,7 @@ input[type="checkbox"] {
   border: 0px solid gray;
   border-width: 0px 0px 1px 0px;
 }
+
+.image {
+  width: 100%;
+}
