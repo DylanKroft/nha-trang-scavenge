@@ -57,10 +57,17 @@
 
 .noLine {
   border: none !important;
+  
 }
 
 .largest {
-  flex: 5 !important;
+  flex: 12 !important;
+  justify-content: flex-start !important;
+  padding: 10px;
+  padding-right: 10px;
+  font-size: 0.75em !important;
+  overflow: hidden !important;
+
 }
 
 input[type="checkbox"] {
@@ -68,10 +75,9 @@ input[type="checkbox"] {
   margin: 0;
   font: inherit;
   color: currentColor;
-  width: 1.15em;
-  height: 1.15em;
   border: 1px solid gray;
   border-radius: 15em;
+  overflow: hidden;
 }
 
 .odd {
@@ -80,12 +86,24 @@ input[type="checkbox"] {
 
 .fourth {
   flex: 1 !important;
+  min-width: 50px;
 }
 
 .third {
   flex: 1 !important;
+  min-width: 50px;
 }
 
 .two {
   flex: 2 !important;
+  min-width: 75px;
+}
+
+.inputField {
+  min-width: 50px;
+  margin: 5px;
+  border: none;
+  height: 70%;
+  border: 0px solid gray;
+  border-width: 0px 0px 1px 0px;
 }

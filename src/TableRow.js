@@ -28,7 +28,7 @@ const TableRow = ({index, one, two, three, final}) => {
   return (<>
     <Container className={[index === "start" ? "start" : "normal", !final ? "final" : "normal", index%2 === 0 ? "even" : "odd"]}>
         <Divider className='largest'>{one}</Divider>
-        <Divider className='two'>{two === "	" ? <input value={data !== "null" ? data : ""} onChange={e => {setData(e.target.value); localStorage.setItem(index + "!", e.target.value)}}/> : two}</Divider>
+        <Divider className='two'>{two === "	" ? <input className='inputField' value={data !== "null" ? data : ""} onChange={e => {setData(e.target.value); localStorage.setItem(index + "!", e.target.value)}}/> : two}</Divider>
         <Divider className='third'>{three}</Divider>
        {<Divider className='noLine fourth'>
           {index !== "start" && <CheckBox className='checkbox' onClick={update} defaultChecked={val}/>}
@@ -48,6 +48,7 @@ const Container = styled.div`
     width: 100%;
     border: 1px solid gray;
     border-width: 0px 1px 1px 1px;
+    overflow: hidden;
 `
 
 const Divider = styled.div`
@@ -57,4 +58,7 @@ const Divider = styled.div`
     align-items: center;
     justify-content: center;
     border-right: 1px solid gray;
+    font-size: 0.75em !important;
+    overflow: hidden;
+
 `
