@@ -12,7 +12,7 @@ function App() {
   return (
     <Container>
       <Header/>
-      <Regroup>PLEASE REGROUP AT 4:15</Regroup>
+      <Regroup>PLEASE REGROUP AT 4:15PM AT ENTRANCE</Regroup>
       <img className='image' src={rules}/>
       <img className='image' src={map}/>
     
